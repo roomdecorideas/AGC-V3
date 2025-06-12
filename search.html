@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | DecorInspire</title>
+    <meta name="robots" content="noindex, nofollow"> <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link"><h1 class="logo">DecorInspire</h1></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar-container">
+            <form id="search-bar-form" class="search-bar-form">
+                <input type="text" id="search-bar-input" class="search-bar-input" placeholder="Search for other inspiration..." required>
+                <button type="submit" class="search-bar-button">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2 id="search-title">Search Results</h2>
+                <p id="search-subtitle">Showing inspirations related to your query.</p>
+            </section>
+            <section class="content-grid" id="search-results-container"></section>
+            <div id="loader" class="loader"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+             <div class="footer-links">
+                <a href="about.html">About Us</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 DecorInspire. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="search.js"></script> 
+    <script src="search-handler.js"></script>
+</body>
+</html>
