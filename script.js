@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             batch.forEach(keyword => {
                 const keywordForUrl = keyword.trim().replace(/\s/g, '-').toLowerCase();
                 const linkUrl = `detail.html?q=${encodeURIComponent(keywordForUrl)}`; 
-                const imageUrl = `https://tse1.mm.bing.net/th?q=${encodeURIComponent(keyword)}&w=400&h=600&c=7&rs=1&p=0&dpr=1.5&pid=1.7`;
+                const imageUrl = `https://tse1.mm.bing.net/th?q=${encodeURIComponent(keyword)}&w=500&h=750&c=7&rs=1&p=0&dpr=1.5&pid=1.7`;
                 const newTitle = generateSeoTitle(keyword);
                 const cardHTML = `<article class="content-card"><a href="${linkUrl}"><img src="${imageUrl}" alt="${newTitle}" loading="lazy"><div class="content-card-body"><h3>${newTitle}</h3></div></a></article>`;
                 contentContainer.innerHTML += cardHTML;
