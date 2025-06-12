@@ -1,6 +1,39 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Content...</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link"><h1 class="logo">DecorInspire</h1></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar-container">
+            <form id="search-bar-form" class="search-bar-form">
+                <input type="text" id="search-bar-input" class="search-bar-input" placeholder="Search for inspiration..." required>
+                <button type="submit" class="search-bar-button">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
         <div class="container">
             <article class="main-article">
+                
                 <h1 id="detail-title"></h1>
                 <figure id="detail-image-container" class="detail-image"></figure>
                 <div class="download-buttons-container">
@@ -8,15 +41,30 @@
                     <a href="https://asianlivenude.github.io/FREE/" target="_blank" rel="noopener noreferrer" class="download-button">Download 4K</a>
                 </div>
                 <div id="detail-body" class="article-content"></div>
+
+                <section class="related-posts-section">
+                    <h2 class="section-title">More Related Inspiration</h2>
+                    <div class="content-grid" id="related-posts-container">
+                        </div>
+                </section>
+                
             </article>
-            <section class="related-posts-section">
-                <h2 class="section-title">More Related Inspiration</h2>
-                <div class="content-grid" id="related-posts-container"></div>
-            </section>
-        </div>
+             </div>
     </main>
-<script src="detail-script.js"></script>
-<script src="search-handler.js"></script>
-<script src="detect-adblock.js"></script>
+
+    <footer>
+        <div class="container">
+             <div class="footer-links">
+                <a href="about.html">About Us</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 DecorInspire. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="detail-script.js"></script>
+    <script src="search-handler.js"></script>
+
 </body>
 </html>
