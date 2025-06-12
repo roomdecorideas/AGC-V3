@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const capitalizedTermForArticle = capitalizeEachWord(term);
         document.title = `${newTitle} | DecorInspire`;
         detailTitle.textContent = newTitle;
-        const imageUrl = `https://tse1.mm.bing.net/th?q=${encodeURIComponent(term)}&w=600&h=900&c=7&rs=1&p=0&dpr=1.5&pid=1.7`;
+        const imageUrl = `https://tse1.mm.bing.net/th?q=${encodeURIComponent(term)}&w=800&h=1200&c=7&rs=1&p=0&dpr=1.5&pid=1.7`;
         detailImageContainer.innerHTML = `<img src="${imageUrl}" alt="${newTitle}">`;
         detailBody.innerHTML = `<p>Welcome to our inspiration gallery dedicated to <strong>${capitalizedTermForArticle}</strong>. Finding the perfect idea for your project can sometimes be a challenge. Here, we've gathered a wide range of the best visual references to help you get a clearer and more detailed picture.</p><p>Every detail in <strong>${capitalizedTermForArticle}</strong> plays a crucial role in creating the atmosphere you desire. From color selection and textures to element arrangement, everything contributes to the final result.</p><p>We hope this collection of images and ideas about <strong>${capitalizedTermForArticle}</strong> sparks your creativity. Feel free to save the images you love as a reference for your next project. Happy creating!</p>`;
     }
